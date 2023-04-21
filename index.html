@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PrintingGuide-Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS Links -->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+    <header class="container-fluid" id="topheader">
+        <div class="row top-contact">
+            <div class="col-sm-6">
+                <ul class="nav top-contact-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:kinjkalpmultiprint@gmail.com"><i class="fa fa-envelope"></i> kinjkalpmultiprint@gmail.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:07948995954"><i class="fa fa-phone"></i> 079-48995954</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul class="nav top-contact-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#LoginModal"><i class="fa fa-user"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#RegisterModal"><i class="fa fa-user"></i> Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Login Modal -->
+        <div class="modal fade" id="LoginModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Login Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title" style="font-weight: 600; color: orange;">User Login</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Login Modal body -->
+                <div class="modal-body">
+                    <form action="#" class="needs-validation" novalidate>
+                        <div class="mb-3 mt-3">
+                          <label for="phone" class="form-label">Phone Number:</label>
+                          <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone" required>
+                          <div class="valid-feedback">Valid Phone Number.</div>
+                          <div class="invalid-feedback">Please Provide Phone Number.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Password:</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" required>
+                          <div class="valid-feedback">Valid Password.</div>
+                          <div class="invalid-feedback">Please Provide Password.</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary" style="background-color: #179dd8; border: 2px solid #179dd8; width: 30%;">Login</button>
+                        </div>
+                      </form>
+                      
+                </div>
+          
+                <!-- Login Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+        </div>
+        <!-- Register Modal -->
+        <div class="modal fade" id="RegisterModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        
+              <!-- Register Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title" style="font-weight: 600; color: orange;">Register</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Register Modal body -->
+              <div class="modal-body">
+                <form action="#" class="needs-validation" novalidate>
+                  <div class="row mb-3 mt-3">
+                    <div class="col-sm-4">
+                      <label for="companyname" class="form-label">Company Name:</label>
+                      <input type="text" class="form-control" id="companyname" name="company_name" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="ownername" class="form-label">Owner Name:</label>
+                      <input type="text" class="form-control" id="ownername" name="name" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="email" class="form-label">Email Address:</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                  </div>
+                  <div class="row mb-3 mt-3">
+                    <div class="col-sm-6">
+                      <label for="password" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="password" name="password" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="password" class="form-label">Confirm Password:</label>
+                      <input type="password" class="form-control" id="password" name="password_confirmation" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                  </div>
+                  <div class="row mb-3 mt-3">
+                    <div class="col-sm-4">
+                      <label for="state" class="form-label">State:</label>
+                      <select id="state" name="state" class="form-select" required>
+                        <option value=""></option>
+                        <option value="1">Andaman and Nicobar Islands</option>
+                        <option value="2">Andhra Pradesh</option>
+                        <option value="3">Arunachal Pradesh</option>
+                        <option value="4">Assam</option>
+                        <option value="5">Bihar</option>
+                        <option value="6">Chandigarh</option>
+                        <option value="7">Chhattisgarh</option>
+                        <option value="8">Dadra and Nagar Haveli</option>
+                        <option value="9">Daman and Diu</option>
+                        <option value="10">Delhi</option>
+                        <option value="11">Goa</option>
+                        <option value="12">Gujarat</option>
+                        <option value="13">Haryana</option>
+                        <option value="14">Himachal Pradesh</option>
+                        <option value="15">Jammu and Kashmir</option>
+                        <option value="16">Jharkhand</option>
+                        <option value="17">Karnataka</option>
+                        <option value="18">Kenmore</option>
+                        <option value="19">Kerala</option>
+                        <option value="20">Lakshadweep</option>
+                        <option value="21">Madhya Pradesh</option>
+                        <option value="22">Maharashtra</option>
+                        <option value="23">Manipur</option>
+                        <option value="24">Meghalaya</option>
+                        <option value="25">Mizoram</option>
+                        <option value="26">Nagaland</option>
+                        <option value="27">Narora</option>
+                        <option value="28">Natwar</option>
+                        <option value="29">Odisha</option>
+                        <option value="30">Paschim Medinipur</option>
+                        <option value="31">Pondicherry</option>
+                        <option value="32">Punjab</option>
+                        <option value="33">Rajasthan</option>
+                        <option value="34">Sikkim</option>
+                        <option value="35">Tamil Nadu</option>
+                        <option value="36">Telangana</option>
+                        <option value="37">Tripura</option>
+                        <option value="38">Uttar Pradesh</option>
+                        <option value="39">Uttarakhand</option>
+                        <option value="40">Vaishali</option>
+                        <option value="41">West Bengal</option>                                
+                      </select>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="district" class="form-label" >District:</label>
+                      <select id="district" name="district" class="form-select" aria-placeholder="Select District" required>
+                        <option value=""></option>                        
+                      </select>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="city" class="form-label">City:</label>
+                      <select id="city" name="city" class="form-select" required>
+                        <option value=""></option>                        
+                      </select>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                  </div>
+                  <div class="row mb-3 mt-3">
+                    <div class="col-sm-12">
+                      <label for="city" class="form-label">Address</label>                        
+                      <textarea name="address" class="form-control" required></textarea>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Provide this field.</div>
+                    </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary" style="background-color: #179dd8; border: 2px solid #179dd8; width: 30%;">Register</button>
+                    </div>
+                  </div>
+                </form> 
+              </div>  
+            
+           <!-- Register Modal footer -->
+           <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>    
+        </div>
+       </div>
+      </div>
+      <div class="topnavbar" id="topnavbar">
+        <nav class="navbar navbar-expand-sm bg-white navbar-light sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand ps-3" href="#">
+                <img src="assets/img/Logo.png" style="height:50px;"> 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end pe-3" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    </header>
+    <!-- JS Links -->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

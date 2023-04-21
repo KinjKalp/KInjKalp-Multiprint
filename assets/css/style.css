@@ -1,0 +1,30 @@
+body{
+    font-family: 'Calibri';
+}
+.top-contact-nav a {
+    font-weight: 600;
+    color: #555;
+    transition: all 0.3s;
+}
+.top-contact-nav a:hover{
+    color: orange;
+}
+.top-contact-nav a i{
+    color: #179DD8;
+}
+.top-contact{
+    border-bottom: 1px solid #eee;
+}
+#collapsibleNavbar ul li a{
+    color: #868686;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Comic Sans MS';
+    transition: all 0.3s;
+}
+#collapsibleNavbar ul li a:hover{
+    color: #179DD8;
+}
+#collapsibleNavbar ul li a.active{
+    color: #179DD8;;
+}
