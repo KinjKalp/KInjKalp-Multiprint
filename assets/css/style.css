@@ -9,6 +9,9 @@ body{
 .top-contact-nav a:hover{
     color: orange;
 }
+.top-contact-nav a:visited{
+    color: #555;
+}
 .top-contact-nav a i{
     color: #179DD8;
 }
@@ -27,4 +30,10 @@ body{
 }
 #collapsibleNavbar ul li a.active{
     color: #179DD8;;
+}
+#home-section{
+    background-image: url(../img/BG21.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
 }
