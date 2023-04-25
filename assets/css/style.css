@@ -3,36 +3,49 @@ body{
 }
 .top-contact-nav a {
     font-weight: 600;
-    color: #555;
+    color: #808080;
     transition: all 0.3s;
 }
-.top-contact-nav a:hover{
+.top-contact-nav li a:hover{
     color: orange;
 }
 .top-contact-nav a:visited{
     color: #555;
 }
-.top-contact-nav a i{
-    color: #179DD8;
+.top-contact-nav li a i{
+    color: #000;
 }
 .top-contact{
     border-bottom: 1px solid #eee;
 }
 #collapsibleNavbar ul li a{
-    color: #868686;
+    color: #838383;
     font-weight: 600;
     font-size: 18px;
     font-family: 'Comic Sans MS';
     transition: all 0.3s;
 }
 #collapsibleNavbar ul li a:hover{
-    color: #179DD8;
+    color: #333333;
 }
 #collapsibleNavbar ul li a.active{
-    color: #179DD8;;
+    color: #333333;;
 }
 #home-section{
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 820px;
+}
+.home-title{
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.home-text{
+    color: white;
+    font-family: 'Arial';
+    font-size: 24px;
+    font-style: italic;
 }
