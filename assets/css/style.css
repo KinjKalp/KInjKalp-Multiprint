@@ -1,51 +1,71 @@
+:root{
+    --primary-color: #000;
+    --white-color: #fff;
+    --white-color2: #f0f0f0;
+    --gray-color: #CCC;
+    --gray-color2: #666;
+    --gray-color3: #888;
+    --gray-color4: #999;
+    --orange-color: #ffa500;
+    --orange-color2: #ffbf00;
+    --blue-color: #4da6ff;
+}
+
 body{
     font-family: 'Calibri';
 }
 .top-contact-nav a {
     font-weight: 600;
-    color: #808080;
-    transition: all 0.3s;
+    color: var(--gray-color4);
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .top-contact-nav li a:hover{
-    color: orange;
+    color: var(--orange-color2);
 }
-.top-contact-nav a:visited{
-    color: #555;
+.top-contact-nav a:visited, .top-contact-nav a:focus{
+    color: var(--gray-color4);
 }
 .top-contact-nav li a i{
-    color: #000;
+    color: var(--white-color2);
 }
-.top-contact{
-    border-bottom: 1px solid #eee;
+.topbar{
+    background-color: var(--primary-color);
 }
 #collapsibleNavbar ul li a{
-    color: #838383;
+    color: var(--gray-color3);
     font-weight: 600;
     font-size: 18px;
-    font-family: 'Comic Sans MS';
-    transition: all 0.3s;
+    transition: all 0.3s ease-out;
 }
 #collapsibleNavbar ul li a:hover{
-    color: #333333;
+    color: var(--primary-color);
 }
 #collapsibleNavbar ul li a.active{
-    color: #333333;;
+    color: var(--primary-color);;
 }
-#home-section{
+.home-section{
     background-position: center;
     background-size: cover;
-    height: 820px;
+    height: 810px;
+    background-image: url(../img/BG21.jpg);
 }
 .home-title{
     color: white;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; */
     text-transform: uppercase;
     font-size: 48px;
 }
 .home-text{
     color: white;
-    font-family: 'Arial';
+    /* font-family: 'Arial'; */
     font-size: 24px;
+    font-weight: normal;
     font-style: italic;
+}
+.home-box{
+    padding-top: 200px;
 }
